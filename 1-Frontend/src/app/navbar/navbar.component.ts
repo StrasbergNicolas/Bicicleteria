@@ -11,7 +11,7 @@ import { ProductoService } from '../services/producto.service'
 
 
 export class NavbarComponent {
-
+  loading: boolean =true;
   navForm: FormGroup
   constructor(private fb: FormBuilder,
               private router: Router,
@@ -24,11 +24,13 @@ export class NavbarComponent {
 }
 
 search(): void {
+  this.loading=false;
   const id = this.navForm.get('search')?.value
       this._productoService.getProducto(id).subscribe(
         (res) => {
           console.log(id)
           this.router.navigate(['/lista']);
+          this.loading=false;
         },
         (error) => {
           console.error('Error en la busqueda', error);
