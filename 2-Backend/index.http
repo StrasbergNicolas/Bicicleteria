@@ -6,7 +6,7 @@ Content-Type: application/json
 
 {
     "name": "bicicleta",
-    "description": "Galletitas ricas",
+    "description": "Shimano",
     "price": 550,
     "stock": 20
 }

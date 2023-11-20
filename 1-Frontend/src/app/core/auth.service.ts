@@ -16,7 +16,7 @@ export class AuthService {
   //acá tendria que llegar la data que se puso en el login y validarla en la base de datos,
   //si el usuario que intenta ingresar tiene cualquier rol, podrá ver el componente de agregar editar
   //sino no podrá hacerlo.
-  //actualmente lo que setá haciendo el programa es ver todos los usuarios sin buscar uno en específico
+  //actualmente lo que está haciendo el programa es ver todos los usuarios sin buscar uno en específico
   getAuthToken(): Observable<boolean>{
     this._usuarioService.getUsuarios().subscribe({
       next: data => {
