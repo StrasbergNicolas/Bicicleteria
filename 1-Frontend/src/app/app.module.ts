@@ -25,7 +25,7 @@ import { AuthService } from './core/servicio.autenticacion';
     LoginComponent,
     NoEncontradoComponent,
     RegistrarseComponent,
-    InicioComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

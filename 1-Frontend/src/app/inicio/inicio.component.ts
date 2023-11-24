@@ -22,12 +22,12 @@ this.obtenerProductos(); //esto es para recargar constantemente la página y ten
 }
 
 obtenerProductos(){
-this._productoService.getProductos().subscribe({
-next: data => {
-console.log(data);
-this.listProducts = data
-}, error: err => {
-console.log(err);
+  this._productoService.getProductos().subscribe({
+    next: data => {
+      console.log(data);
+  this.listProducts = data
+    }, error: err => {
+      console.log(err);
 }
 })
 }

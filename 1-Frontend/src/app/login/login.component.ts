@@ -57,7 +57,7 @@ export class LoginComponent {
               // Guarda los datos en el localStorage después de un inicio de sesión exitoso
               localStorage.setItem('usuario', JSON.stringify(usuarios));
               this.router.navigate(['/lista']);
-              // Aquí podrías realizar acciones adicionales después de un inicio de sesión exitoso
+              // Aquí podría realizar acciones adicionales después de un inicio de sesión exitoso
             },
             (error) => {
               // Manejo de errores, si es necesario

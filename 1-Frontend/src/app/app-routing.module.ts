@@ -9,6 +9,7 @@ import { InicioComponent } from './inicio/inicio.component';
 
 import { loginGuard } from './guards/login.guard';
 
+
 const routes: Routes = [
   { path: 'edicion',  component: ListProductComponent,
     canActivate: [loginGuard]},
